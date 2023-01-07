@@ -12,31 +12,31 @@ echo "Detected platform: $platform $version"
 case "$platform" in
 
   CentOS)
-    ./centos.sh
+    scripts_for_os/centos.sh
     ;;
 
   Debian)
-    ./debian.sh
+    scripts_for_os/debian.sh
     ;;
 
   Fedora)
-    ./fedora.sh
+    scripts_for_os/fedora.sh
     ;;
 
   Raspbian)
-    ./raspbian.sh
+    scripts_for_os/raspbian.sh
     ;;
 
   RHEL)
-    ./rhel.sh
+    scripts_for_os/rhel.sh
     ;;
 
   SLES)
-    ./sles.sh
+    scripts_for_os/sles.sh
     ;;
     
   Ubuntu)
-    ./ubuntu.sh
+    scripts_for_os/ubuntu.sh
     ;;
   *)
     # Еrror message
