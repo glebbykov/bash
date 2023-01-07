@@ -15,19 +15,19 @@ for selection in "${selections[@]}"
 do
   case "$selection" in
     1)
-      ./docker.sh
+      utilits/docker.sh
       ;;
     2)
-      ./git.sh
+      utilits/git.sh
       ;;
     3)
-      ./python.sh
+      utilits/python.sh
       ;;
     4)
-      ./python3.sh
+      utilits/python3.sh
       ;;
     5)
-      ./ansible.sh
+      utilits/ansible.sh
       ;;
     6)
       # Exit the script
