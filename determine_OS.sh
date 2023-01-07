@@ -8,7 +8,7 @@ version=$(cat /etc/*-release | grep -E '^VERSION_ID=' | cut -d '=' -f 2 | tr -d 
 
 echo "Detected platform: $platform $version"
 
-# Depending on the platform detected, the target script is launched
+# Depending on the platform that is detected, the corresponding target script is launched
 case "$platform" in
 
   CentOS)
