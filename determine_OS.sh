@@ -23,14 +23,6 @@ case "$platform" in
     scripts_for_os/fedora.sh
     ;;
 
-  Raspbian)
-    scripts_for_os/raspbian.sh
-    ;;
-
-  RHEL)
-    scripts_for_os/rhel.sh
-    ;;
-
   SLES)
     scripts_for_os/sles.sh
     ;;
@@ -40,7 +32,7 @@ case "$platform" in
     ;;
   *)
     # Еrror message
-    echo "Error: Unrecognized platform"
+    echo "Error: This script does not include scripts for installing utilities for the system"
     exit 1
     ;;
 esac
