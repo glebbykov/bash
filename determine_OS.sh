@@ -15,7 +15,7 @@ case "$platform" in
     scripts_for_os/centos.sh
     ;;
 
-  Debian)
+  debian)
     scripts_for_os/debian.sh
     ;;
 
