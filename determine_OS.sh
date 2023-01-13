@@ -15,10 +15,10 @@ if [ "$platform" == "SLES" ]; then
   echo "Detected brand: $brand $brand_version"
   case "$brand" in 
     openSUSE)
-      scripts_for_os/openSUSE.sh $brand_version
+      scripts_for_os/SUSE.sh
       ;;
     SLE)
-      scripts_for_os/SLE.sh $brand_version
+      scripts_for_os/SUSE.sh
       ;;
   esac
 else
