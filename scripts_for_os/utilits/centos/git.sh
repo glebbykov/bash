@@ -13,4 +13,4 @@ read -p "Enter your email: " email
 # Set the user's name and email in Git
 git config --global user.name "$name"
 git config --global user.email "$email"
-echo 'git config --list'
+git config --list
