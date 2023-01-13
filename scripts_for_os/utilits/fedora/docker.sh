@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Remove any existing versions of Docker and its components
 sudo dnf remove docker \
 docker-client \
 docker-client-latest \
@@ -37,11 +36,8 @@ sudo dnf update
 sudo dnf install -y \
 docker-ce \
 docker-ce-cli \
-containerd.io
-
-# Install Docker Compose
-sudo dnf install -y python3-pip
-sudo pip3 install docker-compose
+containerd.io \
+docker-compose-plugin
 
 sudo systemctl start docker
 sudo systemctl enable docker
