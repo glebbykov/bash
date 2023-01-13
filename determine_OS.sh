@@ -11,7 +11,7 @@ echo "Detected platform: $platform $version"
 # Depending on the platform that is detected, the corresponding target script is launched
 case "$platform" in
 
-  CentOS)
+  centos)
     scripts_for_os/centos.sh
     ;;
 
@@ -19,7 +19,7 @@ case "$platform" in
     scripts_for_os/debian.sh
     ;;
 
-  Fedora)
+  fedora)
     scripts_for_os/fedora.sh
     ;;
 
@@ -27,7 +27,7 @@ case "$platform" in
     scripts_for_os/sles.sh
     ;;
     
-  Ubuntu)
+  ubuntu)
     scripts_for_os/ubuntu.sh
     ;;
   *)
