@@ -24,7 +24,7 @@ case "$platform" in
     ;;
 
   SLES)
-    scripts_for_os/sles.sh
+    scripts_for_os/suse.sh
     ;;
     
   ubuntu)
