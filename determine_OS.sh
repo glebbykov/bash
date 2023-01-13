@@ -8,31 +8,40 @@ version=$(cat /etc/*-release | grep -E '^VERSION_ID=' | cut -d '=' -f 2 | tr -d 
 
 echo "Detected platform: $platform $version"
 
-# Depending on the platform that is detected, the corresponding target script is launched
-case "$platform" in
+if [ "$platform" == "SLES" ]; then
+  # Identify the SUSE Linux brand
+  brand=$(cat /etc/SUSE-brand | grep -E '^BRAND=' | cut -d '=' -f 2 | tr -d '"')
+  brand_version=$(cat /etc/os-release | grep -E '^VERSION=' | cut -d '=' -f 2 | tr -d '"')
+  echo "Detected brand: $brand $brand_version"
+  case "$brand" in 
+    openSUSE)
+      scripts_for_os/openSUSE.sh $brand_version
+      ;;
+    SLE)
+      scripts_for_os/SLE.sh $brand_version
+      ;;
+  esac
+else
+  case "$platform" in
+    centos)
+      scripts_for_os/centos.sh $version
+      ;;
 
-  centos)
-    scripts_for_os/centos.sh
-    ;;
+    debian)
+      scripts_for_os/debian.sh $version
+      ;;
 
-  debian)
-    scripts_for_os/debian.sh
-    ;;
+    fedora)
+      scripts_for_os/fedora.sh $version
+      ;;
 
-  fedora)
-    scripts_for_os/fedora.sh
-    ;;
-
-  SLES)
-    scripts_for_os/suse.sh
-    ;;
-    
-  ubuntu)
-    scripts_for_os/ubuntu.sh
-    ;;
-  *)
-    # Еrror message
-    echo "Error: This script does not include scripts for installing utilities for the system"
-    exit 1
-    ;;
-esac
+    ubuntu)
+      scripts_for_os/ubuntu.sh $version
+      ;;
+    *)
+      # Error message
+      echo "Error: This script does not include scripts for installing utilities for the system"
+      exit 1
+      ;;
+  esac
+fi
