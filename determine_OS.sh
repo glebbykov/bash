@@ -10,14 +10,11 @@ echo "Detected platform: $platform $version"
 
 if [ "$platform" == "SLES" ]; then
   # Identify the SUSE Linux brand
-  brand=$(cat /etc/SUSE-brand | grep -E '^BRAND=' | cut -d '=' -f 2 | tr -d '"')
-  brand_version=$(cat /etc/os-release | grep -E '^VERSION=' | cut -d '=' -f 2 | tr -d '"')
+  brand=$(cat /etc/SUSE-brand | sed -n '1p')
+  brand_version=$(cat /etc/SUSE-brand| grep 'VERSION = '| cut -d '=' -f 2 | tr -d ' ')
   echo "Detected brand: $brand $brand_version"
   case "$brand" in 
     openSUSE)
-      scripts_for_os/suse.sh
-      ;;
-    SLE)
       scripts_for_os/suse.sh
       ;;
   esac
