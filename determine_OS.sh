@@ -21,10 +21,6 @@ echo "Detected platform: $platform $version"
       scripts_for_os/fedora.sh
       ;;
 
-    opensuse-leap)
-      scripts_for_os/suse.sh
-      ;;
-
     ubuntu)
       scripts_for_os/ubuntu.sh
       ;;
