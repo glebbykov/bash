@@ -5,4 +5,5 @@ This repository contains scripts for detecting the type of Linux and installing 
 ## Usage
 
 1. Clone the repository: 
-git clone https://github.com/[username]/linux-software-install.git
+git clone 
+The script for installing git can be taken directly from the repository by going to sw_install/scripts_for_os/utilits/your_type_operating_system/git.sh
