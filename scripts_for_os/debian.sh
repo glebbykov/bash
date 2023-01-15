@@ -26,11 +26,9 @@ do
       scripts_for_os/utilits/debian/python3+ansible.sh
       ;;
     5)
-      # Exit the script
       exit 0
       ;;
     *)
-      # Еrror message
       echo "Error: Invalid selection"
       exit 1
       ;;
