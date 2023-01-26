@@ -5,7 +5,8 @@ echo "1. Docker"
 echo "2. Git"
 echo "3. Python3"
 echo "4. Ansible"
-echo "5. Exit"
+echo "5. NetTools"
+echo "6. Exit"
 
 read -p "Enter your selections (1-5, separated by a space): " -a selections
 
@@ -26,6 +27,9 @@ do
       scripts_for_os/utilits/centos/ansible.sh
       ;;
     5)
+      scripts_for_os/utilits/centos/net-tools.sh
+      ;;
+    6)
       # Exit the script
       exit 0
       ;;
