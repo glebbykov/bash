@@ -1,6 +1,6 @@
 # Linux Software Installation Scripts
 
-This repository contains scripts for detecting the type of Linux and installing various software on different Linux platforms.
+This repository contains scripts for detecting the type of Linux and installing various software on different Linux platforms..
 
 ## Usage
 
