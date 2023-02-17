@@ -14,7 +14,7 @@ cd utilits_install
 Select the utilities you want to install by entering the corresponding numbers from 1 to 4. You can select multiple options by separating them with a space. Press 5 to exit the utility menu.
 4. Follow the prompts to select the software you want to install.
 5. Run the script to check the installed software:
-./utility-check.sh
+**./utility-check.sh**
 
 ## Supported Platforms
 
