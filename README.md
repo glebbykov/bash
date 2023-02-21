@@ -26,7 +26,7 @@ Select the utilities you want to install by entering the corresponding numbers f
 ## Supported Software
 
 - __Python3__
-- Ansible
+- __Ansible__
 - Docker + Docker-compose
 - Git 
 
