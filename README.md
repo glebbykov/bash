@@ -27,7 +27,7 @@ Select the utilities you want to install by entering the corresponding numbers f
 
 - __Python3__
 - __Ansible__
-- Docker + Docker-compose
+- __Docker + Docker-compose__
 - Git 
 
 ## Note
