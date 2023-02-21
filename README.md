@@ -18,7 +18,7 @@ Select the utilities you want to install by entering the corresponding numbers f
 
 ## Supported Platforms
 
-__- Ubuntu__
+- __Ubuntu__
 - Fedora
 - Debian
 - Centos
