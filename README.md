@@ -21,7 +21,7 @@ Select the utilities you want to install by entering the corresponding numbers f
 - __Ubuntu__
 - __Fedora__
 - __Debian__
-- Centos
+- __Centos__
 
 ## Supported Software
 
