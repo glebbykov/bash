@@ -32,6 +32,6 @@ Select the utilities you want to install by entering the corresponding numbers f
 
 ## Note
 
-- These scripts are provided as-is and are intended for educational purposes only.
+- __These scripts are provided as-is and are intended for educational purposes only.__
 - Always review the code and make sure it's safe to run on your system.
 - Additional software can be added upon request.
