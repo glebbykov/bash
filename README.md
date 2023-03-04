@@ -4,8 +4,10 @@ This repository contains scripts for detecting the type of Linux and installing 
 
 ## Usage
 
-1. Clone the repository: 
+1. Clone the repository:
+'''
 git clone https://github.com/glebbykov/utilits_install.git
+'''
 The script for installing git can be taken directly from the repository by going to utilits_install/scripts_for_os/utilits/your_type_operating_system/git.sh
 2. Navigate to the root directory of the repository:
 cd utilits_install
