@@ -10,9 +10,13 @@ git clone https://github.com/glebbykov/utilits_install.git
 ```
 The script for installing git can be taken directly from the repository by going to utilits_install/scripts_for_os/utilits/your_type_operating_system/git.sh
 2. Navigate to the root directory of the repository:
+```
 cd utilits_install
+```
 3. Run the main script to detect the Linux platform and select software to install:
+```
 ./determine_OS+install_utilits.sh
+```
 Select the utilities you want to install by entering the corresponding numbers from 1 to 4. You can select multiple options by separating them with a space. Press 5 to exit the utility menu.
 4. Follow the prompts to select the software you want to install.
 5. Run the script to check the installed software:
